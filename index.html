@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TailwindKit — 20 Premium Components</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          brand: { 50: '#eef2ff', 100: '#e0e7ff', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca' }
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .component-demo { margin: 2rem 0; padding: 1rem; border: 1px dashed #374151; border-radius: 8px; }
+  .component-label { font-size: 0.8rem; color: #6b7280; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  pre { background: #1f2937; color: #e5e7eb; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+</style>
+</head>
+<body class="bg-gray-900 text-gray-100 p-8 max-w-7xl mx-auto">
+
+<h1 class="text-4xl font-bold mb-2">🧩 TailwindKit</h1>
+<p class="text-xl text-gray-400 mb-12">20 premium components. Copy, paste, ship. No dependencies beyond Tailwind CSS.</p>
+
+<!-- 1. HERO -->
+<div class="component-label">1 — Hero Section</div>
+<div class="component-demo bg-gray-950 rounded-2xl p-12 text-center">
+  <h2 class="text-5xl font-extrabold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 text-transparent bg-clip-text">Build faster, ship sooner</h2>
+  <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">Premium Tailwind components designed for startups. No bloat, no dependencies, just copy and paste.</p>
+  <div class="flex gap-4 justify-center">
+    <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition">Get Started →</a>
+    <a href="#" class="border border-gray-600 hover:border-gray-400 text-gray-300 px-8 py-3 rounded-lg font-semibold transition">View Docs</a>
+  </div>
+</div>
+
+<!-- 2. PRICING -->
+<div class="component-label">2 — Pricing Table</div>
+<div class="component-demo grid md:grid-cols-3 gap-6">
+  <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+    <h3 class="text-lg font-semibold mb-2">Starter</h3>
+    <div class="text-4xl font-bold mb-4">$19<span class="text-lg text-gray-400">/mo</span></div>
+    <ul class="space-y-3 mb-8 text-gray-400">
+      <li class="flex items-center gap-2"><span class="text-green-400">✓</span> 5 projects</li>
+      <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Basic analytics</li>
+      <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Email support</li>
+    </ul>
+    <button class="w-full border border-indigo-500 text-indigo-400 py-2 rounded-lg font-semibold hover:bg-indigo-500/10 transition">Get Started</button>
+  </div>
+  <div class="bg-indigo-600 rounded-xl p-8 border-2 border-indigo-400 scale-105">
+    <h3 class="text-lg font-semibold mb-2">Pro</h3>
+    <div class="text-4xl font-bold mb-4">$49<span class="text-lg text-indigo-200">/mo</span></div>
+    <ul class="space-y-3 mb-8 text-indigo-100">
+      <li class="flex items-center gap-2"><span>✓</span> Unlimited projects</li>
+      <li class="flex items-center gap-2"><span>✓</span> Advanced analytics</li>
+      <li class="flex items-center gap-2"><span>✓</span> Priority support</li>
+    </ul>
+    <button class="w-full bg-white text-indigo-600 py-2 rounded-lg font-semibold hover:bg-gray-100 transition">Get Started</button>
+  </div>
+  <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+    <h3 class="text-lg font-semibold mb-2">Enterprise</h3>
+    <div class="text-4xl font-bold mb-4">$99<span class="text-lg text-gray-400">/mo</span></div>
+    <ul class="space-y-3 mb-8 text-gray-400">
+      <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Everything in Pro</li>
+      <li class="flex items-center gap-2"><span class="text-green-400">✓</span> SSO + audit logs</li>
+      <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Custom integrations</li>
+    </ul>
+    <button class="w-full border border-indigo-500 text-indigo-400 py-2 rounded-lg font-semibold hover:bg-indigo-500/10 transition">Contact Sales</button>
+  </div>
+</div>
+
+<!-- 3. FEATURES GRID -->
+<div class="component-label">3 — Feature Grid</div>
+<div class="component-demo grid md:grid-cols-3 gap-8">
+  <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700/50">
+    <div class="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 text-2xl">⚡</div>
+    <h3 class="text-lg font-semibold mb-2">Lightning Fast</h3>
+    <p class="text-gray-400 text-sm">Optimized performance with smart caching and edge delivery worldwide.</p>
+  </div>
+  <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700/50">
+    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 text-2xl">🔒</div>
+    <h3 class="text-lg font-semibold mb-2">Enterprise Security</h3>
+    <p class="text-gray-400 text-sm">SOC 2 compliant, end-to-end encryption, and role-based access control.</p>
+  </div>
+  <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700/50">
+    <div class="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center mb-4 text-2xl">🎨</div>
+    <h3 class="text-lg font-semibold mb-2">Beautiful by Default</h3>
+    <p class="text-gray-400 text-sm">Carefully crafted components that look great out of the box.</p>
+  </div>
+</div>
+
+<!-- 4. TESTIMONIALS -->
+<div class="component-label">4 — Testimonials</div>
+<div class="component-demo grid md:grid-cols-2 gap-6">
+  <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center font-bold">A</div>
+      <div><div class="font-semibold">Alice Chen</div><div class="text-sm text-gray-400">CTO, Acme Inc</div></div>
+    </div>
+    <p class="text-gray-300 italic">"Switched from building UIs from scratch. Saved our team 40+ hours in the first month alone."</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center font-bold">B</div>
+      <div><div class="font-semibold">Bob Kumar</div><div class="text-sm text-gray-400">Founder, BetaStart</div></div>
+    </div>
+    <p class="text-gray-300 italic">"The components are clean, well-documented, and exactly what I needed to ship my MVP."</p>
+  </div>
+</div>
+
+<!-- 5-8: QUICK HITS -->
+<div class="component-label">5 — CTA Banner</div>
+<div class="component-demo bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl p-10 text-center">
+  <h3 class="text-3xl font-bold mb-3">Ready to ship faster?</h3>
+  <p class="text-indigo-100 mb-6">Join 2,000+ developers using TailwindKit. One-time purchase, lifetime updates.</p>
+  <button class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Get TailwindKit — $19</button>
+</div>
+
+<div class="component-label">6 — Navbar</div>
+<div class="component-demo bg-gray-950 rounded-xl px-6 py-4 flex items-center justify-between">
+  <div class="flex items-center gap-8">
+    <span class="text-xl font-bold text-indigo-400">TailwindKit</span>
+    <a href="#" class="text-gray-400 hover:text-white text-sm">Components</a>
+    <a href="#" class="text-gray-400 hover:text-white text-sm">Docs</a>
+    <a href="#" class="text-gray-400 hover:text-white text-sm">Pricing</a>
+  </div>
+  <div class="flex items-center gap-3">
+    <a href="#" class="text-gray-400 hover:text-white text-sm">Sign In</a>
+    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-700">Get Started</a>
+  </div>
+</div>
+
+<div class="component-label">7 — Footer</div>
+<div class="component-demo bg-gray-950 rounded-xl p-10 grid md:grid-cols-4 gap-8 text-sm">
+  <div><h4 class="font-semibold mb-3 text-indigo-400">TailwindKit</h4><p class="text-gray-500">Premium components for modern startups.</p></div>
+  <div><h4 class="font-semibold mb-3">Product</h4><a href="#" class="block text-gray-400 hover:text-white mb-1">Components</a><a href="#" class="block text-gray-400 hover:text-white mb-1">Pricing</a><a href="#" class="block text-gray-400 hover:text-white mb-1">Changelog</a></div>
+  <div><h4 class="font-semibold mb-3">Company</h4><a href="#" class="block text-gray-400 hover:text-white mb-1">About</a><a href="#" class="block text-gray-400 hover:text-white mb-1">Blog</a><a href="#" class="block text-gray-400 hover:text-white mb-1">Careers</a></div>
+  <div><h4 class="font-semibold mb-3">Legal</h4><a href="#" class="block text-gray-400 hover:text-white mb-1">Privacy</a><a href="#" class="block text-gray-400 hover:text-white mb-1">Terms</a></div>
+</div>
+
+<div class="component-label">8 — Stats</div>
+<div class="component-demo grid grid-cols-4 gap-8 text-center">
+  <div><div class="text-4xl font-bold text-indigo-400 mb-1">10K+</div><div class="text-gray-400 text-sm">Developers</div></div>
+  <div><div class="text-4xl font-bold text-purple-400 mb-1">50+</div><div class="text-gray-400 text-sm">Components</div></div>
+  <div><div class="text-4xl font-bold text-pink-400 mb-1">99.9%</div><div class="text-gray-400 text-sm">Uptime</div></div>
+  <div><div class="text-4xl font-bold text-green-400 mb-1">24/7</div><div class="text-gray-400 text-sm">Support</div></div>
+</div>
+
+<!-- 9-12: FORMS -->
+<div class="component-label">9 — Signup Form</div>
+<div class="component-demo max-w-md mx-auto bg-gray-800 rounded-xl p-8 border border-gray-700">
+  <h3 class="text-2xl font-bold mb-6 text-center">Create Account</h3>
+  <input class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 mb-3 text-gray-200 placeholder-gray-500" placeholder="Email">
+  <input type="password" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 mb-3 text-gray-200 placeholder-gray-500" placeholder="Password">
+  <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition">Sign Up</button>
+  <p class="text-center text-gray-500 text-sm mt-4">Already have an account? <a href="#" class="text-indigo-400">Sign in</a></p>
+</div>
+
+<div class="component-label">10 — Login Form</div>
+<div class="component-demo max-w-md mx-auto bg-gray-800 rounded-xl p-8 border border-gray-700">
+  <h3 class="text-2xl font-bold mb-6 text-center">Welcome Back</h3>
+  <input class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 mb-3 text-gray-200 placeholder-gray-500" placeholder="Email">
+  <input type="password" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 mb-3 text-gray-200 placeholder-gray-500" placeholder="Password">
+  <div class="flex items-center justify-between mb-4 text-sm"><label class="flex items-center gap-2 text-gray-400"><input type="checkbox"> Remember me</label><a href="#" class="text-indigo-400">Forgot?</a></div>
+  <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition">Sign In</button>
+</div>
+
+<div class="component-label">11 — Newsletter Form</div>
+<div class="component-demo bg-gray-800 rounded-xl p-8 border border-gray-700 max-w-lg mx-auto text-center">
+  <h3 class="text-xl font-bold mb-2">Stay in the loop</h3>
+  <p class="text-gray-400 mb-4 text-sm">Weekly tips on building better products.</p>
+  <div class="flex gap-2"><input class="flex-1 bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-gray-200 placeholder-gray-500" placeholder="you@email.com"><button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-semibold">Subscribe</button></div>
+</div>
+
+<div class="component-label">12 — Search Bar</div>
+<div class="component-demo max-w-md mx-auto">
+  <div class="relative"><span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">🔍</span><input class="w-full bg-gray-800 border border-gray-700 rounded-lg pl-10 pr-4 py-2 text-gray-200 placeholder-gray-500" placeholder="Search components..."></div>
+</div>
+
+<!-- 13-16: DATA & CARDS -->
+<div class="component-label">13 — Blog Card</div>
+<div class="component-demo max-w-sm bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
+  <div class="h-48 bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-4xl">📝</div>
+  <div class="p-5">
+    <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><span class="bg-indigo-500/20 text-indigo-400 px-2 py-0.5 rounded">Tutorial</span><span>5 min read</span></div>
+    <h3 class="font-semibold mb-2">How to Build a SaaS Dashboard in 30 Minutes</h3>
+    <p class="text-gray-400 text-sm mb-4">A step-by-step guide to shipping your first analytics dashboard.</p>
+    <div class="flex items-center gap-2 text-sm text-gray-500"><div class="w-6 h-6 bg-gray-600 rounded-full"></div> John Doe · May 24</div>
+  </div>
+</div>
+
+<div class="component-label">14 — Dashboard Stat Card</div>
+<div class="component-demo grid grid-cols-4 gap-4">
+  <div class="bg-gray-800 rounded-xl p-4 border border-gray-700"><div class="text-gray-400 text-xs mb-1">Revenue</div><div class="text-2xl font-bold">$12,430</div><div class="text-green-400 text-xs mt-1">↑ 12.5%</div></div>
+  <div class="bg-gray-800 rounded-xl p-4 border border-gray-700"><div class="text-gray-400 text-xs mb-1">Users</div><div class="text-2xl font-bold">1,234</div><div class="text-green-400 text-xs mt-1">↑ 8.2%</div></div>
+  <div class="bg-gray-800 rounded-xl p-4 border border-gray-700"><div class="text-gray-400 text-xs mb-1">Orders</div><div class="text-2xl font-bold">456</div><div class="text-red-400 text-xs mt-1">↓ 3.1%</div></div>
+  <div class="bg-gray-800 rounded-xl p-4 border border-gray-700"><div class="text-gray-400 text-xs mb-1">Conversion</div><div class="text-2xl font-bold">3.2%</div><div class="text-green-400 text-xs mt-1">↑ 0.8%</div></div>
+</div>
+
+<div class="component-label">15 — Alert / Banner</div>
+<div class="component-demo space-y-3">
+  <div class="bg-green-500/10 border border-green-500/30 rounded-lg px-4 py-3 text-green-400 flex items-center gap-2"><span>✅</span> Operation completed successfully.</div>
+  <div class="bg-red-500/10 border border-red-500/30 rounded-lg px-4 py-3 text-red-400 flex items-center gap-2"><span>❌</span> Something went wrong. Please try again.</div>
+  <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg px-4 py-3 text-yellow-400 flex items-center gap-2"><span>⚠️</span> Your subscription expires in 3 days.</div>
+</div>
+
+<div class="component-label">16 — Modal</div>
+<div class="component-demo bg-gray-800 rounded-xl p-6 max-w-md mx-auto border border-gray-700">
+  <h3 class="text-lg font-semibold mb-2">Delete Project?</h3>
+  <p class="text-gray-400 text-sm mb-6">This action cannot be undone. All data will be permanently removed.</p>
+  <div class="flex gap-3 justify-end">
+    <button class="px-4 py-2 border border-gray-600 text-gray-300 rounded-lg hover:bg-gray-700 text-sm">Cancel</button>
+    <button class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 text-sm">Delete</button>
+  </div>
+</div>
+
+<!-- 17-20: MISC -->
+<div class="component-label">17 — Avatar Group</div>
+<div class="component-demo flex items-center gap-2">
+  <div class="flex -space-x-2">
+    <div class="w-8 h-8 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+    <div class="w-8 h-8 bg-purple-500 rounded-full border-2 border-gray-900"></div>
+    <div class="w-8 h-8 bg-pink-500 rounded-full border-2 border-gray-900"></div>
+    <div class="w-8 h-8 bg-gray-600 rounded-full border-2 border-gray-900 flex items-center justify-center text-xs">+5</div>
+  </div>
+  <span class="text-sm text-gray-400 ml-2">Joined by 8 others</span>
+</div>
+
+<div class="component-label">18 — Tabs</div>
+<div class="component-demo">
+  <div class="flex border-b border-gray-700 gap-0">
+    <button class="px-4 py-2 text-sm font-medium text-indigo-400 border-b-2 border-indigo-400">Overview</button>
+    <button class="px-4 py-2 text-sm text-gray-400 hover:text-gray-200">Analytics</button>
+    <button class="px-4 py-2 text-sm text-gray-400 hover:text-gray-200">Settings</button>
+    <button class="px-4 py-2 text-sm text-gray-400 hover:text-gray-200">Billing</button>
+  </div>
+</div>
+
+<div class="component-label">19 — Badge / Tag</div>
+<div class="component-demo flex gap-2 flex-wrap">
+  <span class="px-2 py-1 bg-indigo-500/20 text-indigo-400 text-xs rounded font-medium">React</span>
+  <span class="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded font-medium">TypeScript</span>
+  <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded font-medium">Production</span>
+  <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded font-medium">Beta</span>
+  <span class="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded font-medium">Deprecated</span>
+</div>
+
+<div class="component-label">20 — Skeleton Loader</div>
+<div class="component-demo space-y-3">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 bg-gray-700 rounded-full animate-pulse"></div>
+    <div class="space-y-2 flex-1">
+      <div class="h-3 bg-gray-700 rounded animate-pulse w-3/4"></div>
+      <div class="h-3 bg-gray-700 rounded animate-pulse w-1/2"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-600 text-sm">
+  <p>TailwindKit — 20 premium components. MIT License. Built for developers who ship.</p>
+  <p class="mt-1"><a href="https://github.com/18850196928-max/tailwind-kit" class="text-indigo-400 hover:underline">View on GitHub</a></p>
+</footer>
+</body>
+</html>
